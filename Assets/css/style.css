@@ -49,11 +49,13 @@ nav a {
 
 .main-block {
     width: 960px;
-    margin: auto;
     background-color: #ffffff;
+    margin: auto;
     padding: 30px;
     margin-top: 25px;
+    box-sizing: border-box;
 }
+
 
 .heading2 {
     border-bottom: solid 2px #cccccc;
@@ -82,7 +84,7 @@ nav a {
     color: #ffffff;
     background-color: #4aaaa5;
     position: absolute;
-    width: 100%;
+    width: 200px;
     top: 50%
 }
 
@@ -102,7 +104,7 @@ nav a {
     color: #ffffff;
     background-color: #4aaaa5;
     position: absolute;
-    width: 100%;
+    width: 200px;
     top: 50%
 }
 
@@ -122,21 +124,9 @@ nav a {
     color: #ffffff;
     background-color: #4aaaa5;
     position: absolute;
-    width: 100%;
+    width: 200px;
     top: 50%
 }
-
-.pic4 {
-    width: 200px;
-    height: 200px;
-}
-
-.pic5 {
-    width: 200px;
-    height: 200px;
-}
-
-
 
 footer {
     background-color:#666666;
@@ -148,4 +138,47 @@ footer {
     padding: 40px 0 0 0;
     color: #ffffff;
     border-top: solid 6px #4aaaa5;
+}
+
+@media screen and (max-width: 980px) {
+    .main-block {
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-block {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .main-block {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .full-navbar {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: static
+    }
+
+    .name {
+        width: 100%;
+    }
+
+    .navbar {
+        margin: auto;
+    }
+
+    footer {
+        position: static;
+        bottom: 0;
+        left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+
 }
